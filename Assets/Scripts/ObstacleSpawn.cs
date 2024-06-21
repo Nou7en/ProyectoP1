@@ -22,7 +22,6 @@ public class ObstacleSpawner : MonoBehaviour
         int obstacleSpawnIndex = Random.Range(2,5);
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
         Quaternion spawnRotation = transform.GetChild(obstacleSpawnIndex).rotation;
-
         Instantiate(obstaclePrefab,spawnPoint.position,spawnRotation,transform);
     }
 }
